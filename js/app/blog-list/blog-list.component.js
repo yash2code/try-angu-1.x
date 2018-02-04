@@ -1,12 +1,12 @@
 "use strict";
 
-angular.module('blogList')
+angular.module('blogList',[])
     .component('blogList', {
 
       //  template: '<div class=""><h1 class="new-class"> {{title}} </h1><button ng-click="clickme()">click me</button></div>',
       templateUrl: '/templates/blog-list.html',  
-      controller : function($scope) {
-
+      controller : function($routeParams, $scope) {
+            console.log($routeParams);
             var blogItems = [
 
                     {title:'title',id:1,description:'desc...'},

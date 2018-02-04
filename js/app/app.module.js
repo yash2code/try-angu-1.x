@@ -1,3 +1,13 @@
-'use strict';
+/* 'use strict';
 
-angular.module('try', ['blogList']);
+angular.module('try', [
+
+    //external
+    'ngResoure',
+    'ngRoute',
+    
+    //internal
+    'blogList'
+
+
+]); */
