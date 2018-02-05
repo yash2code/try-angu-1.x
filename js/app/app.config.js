@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("try",['ngRoute','blogList'])
+angular.module("try",['ngRoute','blogDetail','blogList'])
     .config(function(
         $locationProvider,
         $routeProvider
@@ -9,7 +9,7 @@ angular.module("try",['ngRoute','blogList'])
         $routeProvider
           .when("/", { template: "<blog-list></blog-list>" })
           .when("/about", { templateUrl: "templates/about.html" })
-          .when("/blog/:id", { template: "<blog-list></blog-list>" })
+          .when("/blog/:id", { template: "<blog-detail></blog-detail>" })
           /* .when("/blog/2", {
                 template: '<blog-list></blog-list>'
             }) */
